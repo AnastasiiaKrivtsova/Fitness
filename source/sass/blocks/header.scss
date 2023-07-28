@@ -1,0 +1,69 @@
+.header {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+}
+
+.header__container {
+  display: grid;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 30px 103px;
+
+  background-color: $color-transparent;
+
+  grid-template-columns: 122px 154px;
+
+  @include vp-1199 {
+    padding: 30px 45px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.header__logo {
+  padding: 10px 0;
+
+  @include vp-767 {
+    padding: 0;
+    padding-top: 4px;
+  }
+}
+
+.header__phone {
+  max-width: 155px;
+  margin-left: auto;
+  padding-top: 3px;
+
+  font-weight: 600;
+  font-size: 26px;
+  font-family: $ff-primary;
+  color: $color-default-white;
+  letter-spacing: 0.05rem;
+
+  @include vp-1199 {
+    align-self: center;
+    padding: 0;
+
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    align-self: flex-start;
+
+    font-size: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-egyptian-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+}

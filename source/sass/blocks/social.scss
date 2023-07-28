@@ -1,0 +1,48 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 20px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+
+  color: $color-default-black;
+
+  background-color: $color-default-white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+
+    background-color: $color-egyptian-blue;
+  }
+
+  &:active {
+    color: $color-default-white;
+
+    background-color: $color-sapphire;
+  }
+
+  &:disabled {
+    color: $color-default-black;
+
+    background-color: $color-black-russian;
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+}

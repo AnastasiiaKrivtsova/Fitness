@@ -1,0 +1,27 @@
+.contacts-form {
+  background: linear-gradient(
+  to right,
+  $color-sapphire 50%,
+  $color-default-white 50%
+  );
+  border-top: 1px solid $color-sapphire;
+
+  @include vp-1199 {
+    background: linear-gradient(
+    to bottom,
+    $color-sapphire 324px,
+    $color-default-white 324px
+    );
+  }
+}
+
+.contacts-form__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
