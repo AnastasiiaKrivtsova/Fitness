@@ -1,0 +1,156 @@
+.accordion__element {
+  position: relative;
+
+  line-height: 120%;
+
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+}
+
+.accordion__element h3 {
+  margin: 0;
+  padding: 34px 60px 36px 0;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: $color-sapphire;
+  letter-spacing: 0.1px;
+
+  @include vp-1199 {
+    padding: 32px 60px 31px 0;
+  }
+
+  @include vp-767 {
+    padding: 20px 30px 20px 0;
+
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+}
+
+.accordion__element--tab-two h3 {
+  @include vp-1199 {
+    padding: 35px 60px 36px 0;
+  }
+}
+
+.accordion__element--tab-three h3 {
+  @include vp-1199 {
+    padding: 35px 60px 36px 0;
+  }
+}
+
+.accordion__element--tab-four h3 {
+  @include vp-1199 {
+    padding: 26px 60px 27px 0;
+
+    line-height: 120%;
+  }
+}
+
+.accordion__element--tab-ten h3,
+.accordion__element--tab-eleven h3 {
+  @include vp-767 {
+    padding-bottom: 26px;
+  }
+}
+
+.accordion__element--tab-twelve h3 {
+  @include vp-767 {
+    padding-bottom: 26px;
+  }
+}
+
+.accordion__button {
+  position: absolute;
+  top: 46px;
+  right: 0;
+
+  width: 42px;
+  height: 42px;
+
+  background: url("../img/svg/plus-active.svg") no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  transform: translate(0, -50%);
+  cursor: pointer;
+
+  transition: background 0.3s;
+
+  @include hover-focus {
+    background: url("../img/svg/plus-hover-focus.svg") no-repeat;
+    background-size: cover;
+  }
+
+  @include vp-1199 {
+    &--tab-four {
+      top: 54px;
+    }
+  }
+
+  @include vp-767 {
+    top: 52px;
+
+    width: 32px;
+    height: 32px;
+
+    &--tab-eleven,
+    &--tab-twelve {
+      top: 42px;
+    }
+  }
+
+  &:disabled {
+    background: url("../img/svg/plus-disabled.svg") no-repeat;
+
+    pointer-events: none;
+  }
+}
+
+.accordion__element.is-active .accordion__button {
+  background: url("../img/svg/minus.svg") no-repeat;
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+
+    background-size: cover;
+  }
+}
+
+.accordion__content {
+  margin: -32px 0 30px;
+  padding-right: 176px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+
+  @include vp-1199 {
+    padding-right: 160px;
+  }
+
+  @include vp-767 {
+    margin: -24px 0 21px;
+    padding-right: 0;
+  }
+}
+
+.accordion__wrapper p {
+  margin-bottom: -6px;
+
+  @include vp-767 {
+    margin-top: 19px;
+    margin-bottom: -3px;
+
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
