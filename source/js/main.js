@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
-import './modules/swiper';
+import {setSwiper} from './modules/swiper';
 import './modules/iphone-inline-video';
 
 // ---------------------------------
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const form = new Form();
     window.form = form;
+    setSwiper();
     form.init();
     initTabs();
     initAccordions();
