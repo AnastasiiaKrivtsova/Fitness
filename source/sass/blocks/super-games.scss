@@ -55,6 +55,8 @@
 
   @include vp-1199 {
     padding-left: 6px;
+    font-size: 48px;
+    line-height: 47px;
   }
 }
 
@@ -73,6 +75,18 @@
   font-size: 18px;
   line-height: 18px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+
+    width: 64px;
+    height: 1px;
+
+    background-color: $color-default-white;
+  }
+
   @include vp-1199 {
     margin-top: -4px;
     margin-bottom: 5px;
@@ -84,18 +98,6 @@
 
       width: 42px;
     }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-
-    width: 64px;
-    height: 1px;
-
-    background-color: $color-default-white;
   }
 }
 
@@ -111,6 +113,8 @@
 
   @include vp-1199 {
     align-items: flex-start;
+    font-size: 24px;
+    margin-top: -10px;
 
     column-gap: 4px;
   }
@@ -126,6 +130,7 @@
 
   @include vp-1199 {
     margin: 0;
+    margin-top: 10px;
 
     font-size: 10px;
     line-height: 12px;
@@ -139,6 +144,22 @@
 
   font-size: 18px;
   line-height: 18px;
+}
+
+.super-games__time dt {
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-bottom: 37px;
+    left: 0;
+
+    width: 88px;
+    height: 1px;
+
+    background-color: $color-default-white;
+  }
 
   @include vp-1199 {
     margin-bottom: 0;
@@ -152,18 +173,6 @@
       width: 56px;
     }
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-
-    width: 88px;
-    height: 1px;
-
-    background-color: $color-default-white;
-  }
 }
 
 .super-games__time dd {
@@ -174,8 +183,8 @@
   line-height: 40px;
 
   @include vp-1199 {
-    margin-top: -5px;
-    padding-top: 10px;
+    margin-top: -10px;
+    font-size: 24px;
   }
 }
 
@@ -188,7 +197,7 @@
   grid-column: 1/3;
 
   @include vp-1199 {
-    margin-bottom: 24px;
+    margin-top: -10px;
     padding-top: 2px;
 
     font-size: 12px;

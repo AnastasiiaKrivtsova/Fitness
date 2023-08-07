@@ -22,6 +22,7 @@
   margin: 0;
   padding-top: 6px;
   padding-left: 6px;
+  color: $color-sapphire;
 
   font-weight: 600;
   font-size: 54px;
@@ -33,6 +34,8 @@
   @include vp-1199 {
     margin: 4px;
     padding: 0;
+    font-size: 42px;
+    margin-top: -3px;
   }
 
   @include vp-767 {
