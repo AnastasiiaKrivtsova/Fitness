@@ -1086,6 +1086,14 @@ button,
   background: url("../img/svg/minus.svg") no-repeat;
 }
 
+.accordion__element.is-active .accordion__button.focus-visible:focus {
+  background-size: cover;
+}
+
+.accordion__element.is-active .accordion__button:disabled {
+  pointer-events: none;
+}
+
 .accordion__content {
   margin: -32px 0 30px;
   padding-right: 176px;
@@ -4179,6 +4187,10 @@ button,
 @media (hover: hover) {
   .accordion__button:hover:not(.focus-visible) {
     background: url("../img/svg/plus-hover-focus.svg") no-repeat;
+    background-size: cover;
+  }
+
+  .accordion__element.is-active .accordion__button:hover:not(.focus-visible) {
     background-size: cover;
   }
 
