@@ -5,6 +5,7 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 120px 103px 235px 163px;
+  color: $color-sapphire;
 
   column-gap: 85px;
 
@@ -114,6 +115,10 @@
   top: 408px;
   left: 540px;
 
+  &::after {
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+
   @include vp-1199 {
     top: auto;
     bottom: 100px;
@@ -139,7 +144,7 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    width: 100%;
     height: 167px;
   }
 }
@@ -161,9 +166,22 @@
     background-image: url("../img/svg/player-hover-focus.svg");
   }
 
+  &:active {
+    background-image: url("../img/svg/player-active.svg");
+  }
+
   &:disabled {
     background-image: url("../img/svg/player-disabled.svg");
 
     pointer-events: none;
+  }
+
+  @include vp-1199 {
+    background: none url("../img/svg/player-tablet.svg") no-repeat;
+    border: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 73px;
+    height: 73px;
   }
 }

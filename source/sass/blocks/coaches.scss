@@ -24,10 +24,13 @@
   line-height: 54px;
   font-family: $ff-primary;
   letter-spacing: 0.1rem;
+  color: $color-sapphire;
 
   @include vp-1199 {
-    margin: 0 0 35px;
+    margin-top: -10px;
+    margin-bottom: 30px;
     padding-left: 0;
+    font-size: 42px;
 
     text-align: center;
   }
