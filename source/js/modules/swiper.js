@@ -33,6 +33,7 @@ export const setSwiper = () => {
   const swiperReviews = new Swiper('.reviews__swiper', {
     // Optional parameters
     slidesPerView: 1,
+    loop: true,
 
     // Navigation arrows
     navigation: {
