@@ -1032,6 +1032,17 @@ button,
 .accordion__element.is-active .accordion__button {
   background: url("../img/svg/minus.svg") no-repeat;
 }
+@media (hover: hover) {
+  .accordion__element.is-active .accordion__button:hover:not(.focus-visible) {
+    background-size: cover;
+  }
+}
+.accordion__element.is-active .accordion__button.focus-visible:focus {
+  background-size: cover;
+}
+.accordion__element.is-active .accordion__button:disabled {
+  pointer-events: none;
+}
 @media (max-width: 767px) {
   .accordion__element.is-active .accordion__button {
     width: 32px;
