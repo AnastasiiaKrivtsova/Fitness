@@ -118,6 +118,8 @@
   background: url("../img/svg/minus.svg") no-repeat;
 
   @include hover-focus {
+    background: url("../img/svg/minus.svg") no-repeat;
+
     background-size: cover;
   }
 

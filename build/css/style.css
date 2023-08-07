@@ -1088,10 +1088,14 @@ button,
 
 .accordion__element.is-active .accordion__button.focus-visible:focus {
   background-size: cover;
+<<<<<<< HEAD
 }
 
 .accordion__element.is-active .accordion__button:disabled {
   pointer-events: none;
+=======
+  background: url("../img/svg/minus.svg") no-repeat;
+>>>>>>> 8724ad429234e782d7246390d1b5a4037bd29afc
 }
 
 .accordion__content {
@@ -4192,6 +4196,10 @@ button,
 
   .accordion__element.is-active .accordion__button:hover:not(.focus-visible) {
     background-size: cover;
+<<<<<<< HEAD
+=======
+    background: url("../img/svg/minus.svg") no-repeat;
+>>>>>>> 8724ad429234e782d7246390d1b5a4037bd29afc
   }
 
   .gym__video-btn:hover:not(.focus-visible) {
