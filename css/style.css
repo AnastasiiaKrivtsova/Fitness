@@ -1087,11 +1087,8 @@ button,
 }
 
 .accordion__element.is-active .accordion__button.focus-visible:focus {
+  background: url("../img/svg/minus.svg") no-repeat;
   background-size: cover;
-}
-
-.accordion__element.is-active .accordion__button:disabled {
-  pointer-events: none;
 }
 
 .accordion__content {
@@ -4191,6 +4188,7 @@ button,
   }
 
   .accordion__element.is-active .accordion__button:hover:not(.focus-visible) {
+    background: url("../img/svg/minus.svg") no-repeat;
     background-size: cover;
   }
 
