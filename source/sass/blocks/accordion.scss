@@ -119,10 +119,7 @@
 
   @include hover-focus {
     background-size: cover;
-  }
-
-  &:disabled {
-    pointer-events: none;
+    background: url("../img/svg/minus.svg") no-repeat;
   }
 
   @include vp-767 {
