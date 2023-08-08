@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding: 74px 15px 71px;
+    padding: 70px 15px 71px;
   }
 }
 
@@ -37,7 +37,9 @@
   }
 
   @include vp-767 {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 0.06rem;
   }
 }
 
@@ -54,7 +56,6 @@
 .faq__controls {
   display: flex;
   flex-direction: column;
-
   gap: 10px;
 
   @include vp-1199 {
@@ -67,13 +68,13 @@
   @include vp-767 {
     margin: 0 auto 29px;
 
-    gap: 8px;
+    gap: 6px;
   }
 }
 
 .faq__control {
   width: 260px;
-  padding: 17px 0;
+  padding: 17px 88px;
 
   font-weight: 500;
   font-size: 18px;
@@ -86,11 +87,12 @@
 
   @include vp-1199 {
     width: 162px;
+    padding: 17px 30px;
   }
 
   @include vp-767 {
     width: 141px;
-    padding: 12px 0;
+    padding: 12px 30px;
 
     font-size: 16px;
   }
@@ -106,15 +108,20 @@
 }
 
 .faq__control.is-active {
-  padding: 18px 0;
+  padding: 18px 88px;
 
   color: $color-default-white;
 
   background: linear-gradient(to right, #ed0233, #003eb7);
   border: none;
 
+  @include vp-1199 {
+    width: 162px;
+    padding: 17px 30px;
+  }
+
   @include vp-767 {
-    padding: 11px 0;
+    padding: 11px 30px;
   }
 }
 

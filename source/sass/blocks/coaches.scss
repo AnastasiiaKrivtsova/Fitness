@@ -293,4 +293,24 @@
       }
     }
   }
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    &--prev {
+      left: 6%;
+
+      &:hover,
+      &:focus {
+        left: 4%;
+      }
+    }
+
+    &--next {
+      right: 6%;
+
+      &:hover,
+      &:focus {
+        right: 4%;
+      }
+    }
+  }
 }
