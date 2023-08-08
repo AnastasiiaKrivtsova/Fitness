@@ -18,7 +18,7 @@
     display: grid;
     width: 750px;
     padding: 82px 37px;
-    margin: 0;
+    margin: 0 auto;
 
     gap: 28px;
     grid-template-columns: 1fr 1fr;
@@ -39,7 +39,7 @@
 
   text-align: right;
 
-  grid-template-columns: 129px 248px;
+  grid-template-columns: 132px 248px;
 
   @include vp-1199 {
     padding: 58px 0 0;
@@ -80,18 +80,18 @@
   }
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     padding-right: 9px;
 
     font-size: 28px;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
   }
 }
 
 .hero__inner h1 {
   align-self: flex-end;
   margin: 0 auto;
-  padding-left: 27px;
+  padding-left: 23px;
 
   font-weight: 600;
   font-size: 92px;
@@ -105,40 +105,43 @@
   -webkit-text-stroke-width: 4px;
 
   @include vp-1199 {
-    margin-top: -15px;
+    margin-top: -30px;
     font-size: 72px;
     line-height: 86px;
-    padding-left: 0;
-    letter-spacing: 0.17rem;
+    padding-left: 10px;
+    letter-spacing: 0.1rem;
     text-transform: lowercase;
   }
 
   @include vp-767 {
     position: relative;
-    right: 6px;
+    padding-right: 10px;
 
     margin-bottom: 22px;
-    padding-right: 0;
+    letter-spacing: 0.09rem;
+    padding-left: 0;
   }
 }
 
 .hero__list {
   align-self: center;
-  margin: 0 auto;
-  padding: 110px 0 0 0;
+  text-align: right;
+  padding: 108px 0 0 19px;
+  overflow-y: auto;
 
   list-style-type: none;
   font-size: 14px;
   line-height: 150%;
   font-family: $ff-secondary;
-  text-align: right;
   letter-spacing: 0;
+  overflow: hidden;
 
   grid-column: 1/2;
   grid-row: 2/3;
 
   @include vp-1199 {
     padding-top: 59px;
+    padding-left: 0;
   }
 
   @include vp-767 {
@@ -169,7 +172,7 @@
   @include vp-1199 {
     width: auto;
     margin-right: -10px;
-    margin-bottom: -5px;
+    margin-bottom: -17px;
     padding: 21px 30px;
   }
 

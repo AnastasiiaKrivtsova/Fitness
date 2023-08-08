@@ -4,13 +4,13 @@
 
 .footer__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 34px 103px 34px;
+  padding: 36px 103px 34px;
 
   color: $color-default-white;
 
@@ -20,7 +20,7 @@
 
   @include vp-767 {
     display: block;
-    padding: 45px 15px 52px;
+    padding: 50px 15px 52px;
 
     column-count: 2;
     column-gap: 28px;
@@ -61,8 +61,15 @@
 
   @include vp-767 {
     display: block;
-    margin-bottom: 54px;
     padding: 0;
+    margin-bottom: 54px;
+  }
+}
+
+.footer__item {
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 

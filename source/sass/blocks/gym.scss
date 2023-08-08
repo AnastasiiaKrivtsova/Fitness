@@ -45,7 +45,7 @@
   font-weight: 600;
   font-size: 48px;
   font-family: $ff-primary;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
 
   @include vp-1199 {
     margin-bottom: 16px;
@@ -112,17 +112,29 @@
 
 .gym__video-wrapper {
   position: absolute;
+  width: fit-content;
   top: 408px;
   left: 540px;
 
   &::after {
-    background-color: rgba(20, 54, 122, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+
+   background-color: rgba(20, 54, 122, 0.5);
   }
 
   @include vp-1199 {
     top: auto;
     bottom: 100px;
-    left: 251px;
+    left: auto;
   }
 
   @include vp-767 {
@@ -145,6 +157,7 @@
 
   @include vp-767 {
     width: 100%;
+    min-width: 320px;
     height: 167px;
   }
 }
