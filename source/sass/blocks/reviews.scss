@@ -35,27 +35,31 @@
 
   @include vp-767 {
     margin-bottom: 45px;
-    margin-bottom: 44px;
+    margin-top: 5px;
     font-size: 32px;
   }
 }
 
 .reviews__swiper {
-  width: 560px;
+  max-width: 560px;
+  object-fit: cover;
+  height: 100%;
+  background-size: cover;
+  width: 100%;
 
   @include vp-1199 {
-    width: 566px;
+    max-width: 556px;
   }
 
   @include vp-767 {
-    width: 226px;
+    min-width: 226px;
+    max-width: 80%;
   }
 }
 
 .reviews__slide-wrapper {
   align-items: center;
   position: relative;
-  object-fit: cover;
 
   padding: 54px 54px 57px;
   padding-left: 170px;
@@ -70,9 +74,7 @@
 
   @include vp-767 {
     display: grid;
-    width: 100%;
-    max-width: 100%;
-    min-height: 335px;
+    min-height: 100%;
     padding: 40px 17px 34px;
 
     column-gap: 2px;
@@ -138,7 +140,7 @@
 .reviews__swiper-button {
   position: absolute;
   top: 339px;
-  z-index: 2;
+  z-index: 10;
 
   display: flex;
   justify-content: center;
@@ -159,18 +161,18 @@
     background-image: url("../img/svg/swiper.svg");
     transform: translate(0, -50%);
 
-  &:hover,
-  &:focus-visible {
-    background-image: url("../img/svg/swiper-hover-focus.svg");
-    background-size: 56px 56px;
-    outline: none;
-  }
+    &:hover,
+    &:focus-visible {
+      background-image: url("../img/svg/swiper-hover-focus.svg");
+      background-size: 56px 56px;
+      outline: none;
+    }
 
-  &:active {
-    background-image: url("../img/svg/swiper-active.svg");
-    background-size: 56px 56px;
+    &:active {
+      background-image: url("../img/svg/swiper-active.svg");
+      background-size: 56px 56px;
+    }
   }
-}
 
   &--next {
     right: calc((100% - 560px) / 2 - 76px);
@@ -204,7 +206,7 @@
   }
 
   @include vp-767 {
-    top: 307px;
+    top: 60%;
     width: 20px;
     height: 20px;
 
@@ -212,11 +214,11 @@
     transform: translate(0, -48%);
 
     &--prev {
-      left: calc((100% - 160px) / 2 - 69px);
+      left: 3%;
     }
 
     &--next {
-      right: calc((100% - 160px) / 2 - 69px);
+      right: 3%;
     }
   }
 }

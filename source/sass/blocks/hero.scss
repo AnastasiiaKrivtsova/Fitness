@@ -39,7 +39,7 @@
 
   text-align: right;
 
-  grid-template-columns: 132px 248px;
+  grid-template-columns: 134px 246px;
 
   @include vp-1199 {
     padding: 58px 0 0;
@@ -91,7 +91,7 @@
 .hero__inner h1 {
   align-self: flex-end;
   margin: 0 auto;
-  padding-left: 23px;
+  padding-left: 21px;
 
   font-weight: 600;
   font-size: 92px;
@@ -105,20 +105,22 @@
   -webkit-text-stroke-width: 4px;
 
   @include vp-1199 {
-    margin-top: -30px;
+    margin-top: -49px;
     font-size: 72px;
-    line-height: 86px;
-    padding-left: 10px;
-    letter-spacing: 0.1rem;
-    text-transform: lowercase;
+    line-height: 90px;
+    padding-right: 3px;
+    padding-left: 0;
+    letter-spacing: 0.15rem;
+    text-transform: none;
   }
 
   @include vp-767 {
     position: relative;
     padding-right: 10px;
+    margin-top: -30px;
 
-    margin-bottom: 22px;
-    letter-spacing: 0.09rem;
+    margin-bottom: 19px;
+    letter-spacing: 0.15rem;
     padding-left: 0;
   }
 }
@@ -134,19 +136,20 @@
   line-height: 150%;
   font-family: $ff-secondary;
   letter-spacing: 0;
-  overflow: hidden;
 
   grid-column: 1/2;
   grid-row: 2/3;
 
   @include vp-1199 {
-    padding-top: 59px;
-    padding-left: 0;
+    padding: 0;
+    padding-top: 53px;
+    padding-right: 16px;
   }
 
   @include vp-767 {
     position: relative;
     left: 4px;
+    overflow-y: hidden;
 
     padding: 0;
   }
@@ -171,8 +174,7 @@
 
   @include vp-1199 {
     width: auto;
-    margin-right: -10px;
-    margin-bottom: -17px;
+    margin-bottom: -19px;
     padding: 21px 30px;
   }
 

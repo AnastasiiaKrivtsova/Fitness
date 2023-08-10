@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 6px 15px 50px;
+    padding: 6px 5px 50px;
   }
 }
 
@@ -38,6 +38,8 @@
   @include vp-767 {
     margin-bottom: 46px;
     padding-top: 0;
+    font-size: 32px;
+    margin-top: -8px;
   }
 }
 
@@ -64,18 +66,43 @@
   position: relative;
 
   margin: 0 auto;
+  max-width: 268px;
+
+  cursor: pointer;
+
+  @include vp-1199 {
+    max-width: 268px;
+  }
 
   @include vp-767 {
-    height: 274px;
+    width: fit-content;
+    max-width: 226px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 auto;
   }
 }
 
 .coaches__slide img {
   display: flex;
+  min-height: 294px;
 
   background-color: $color-ghost-white;
 
   object-fit: cover;
+
+  @include vp-767 {
+    min-height: 274px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .coaches__slide > p {
@@ -201,26 +228,6 @@
   background-size: 16px 32px;
   cursor: pointer;
 
-  @include vp-1199 {
-    top: 48%;
-  }
-
-  @include vp-767 {
-    top: 51%;
-
-    width: 20px;
-    height: 20px;
-
-    background-size: 10px 19px;
-
-    &--prev {
-      left: 10px;
-    }
-
-    &--next {
-      right: 10px;
-    }
-  }
 
   &--prev {
     left: 27px;
@@ -274,9 +281,30 @@
     }
   }
 
+  @include vp-1199 {
+    top: 48%;
+  }
+
+  @include vp-767 {
+    top: 51%;
+
+    width: 20px;
+    height: 20px;
+
+    background-size: 10px 19px;
+
+    &--prev {
+      left: calc((100% - 200px) / 2 - 15.17%);
+    }
+
+    &--next {
+      right: calc((100% - 200px) / 2 - 15.17%);
+    }
+  }
+
   @media (min-width: $vp-1200) and (max-width: 1360px) {
     &--prev {
-      left: 1%;
+      left: calc((100% - 910px) / 2 - 11.21%);
 
       &:hover,
       &:focus {
@@ -285,7 +313,7 @@
     }
 
     &--next {
-      right: 1%;
+      right: calc((100% - 910px) / 2 - 11.21%);
 
       &:hover,
       &:focus {
@@ -296,7 +324,7 @@
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     &--prev {
-      left: 6%;
+      left: calc((100% - 460px) / 2 - 15.17%);
 
       &:hover,
       &:focus {
@@ -305,7 +333,7 @@
     }
 
     &--next {
-      right: 6%;
+      right: calc((100% - 460px) / 2 - 15.17%);
 
       &:hover,
       &:focus {
