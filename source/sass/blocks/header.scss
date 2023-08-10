@@ -36,7 +36,7 @@
 }
 
 .header__phone {
-  max-width: 155px;
+  width: 155px;
   margin-left: auto;
   padding-top: 3px;
 
@@ -46,6 +46,7 @@
   color: $color-default-white;
   letter-spacing: 0.05rem;
   grid-column: 2/3;
+  overflow-y: auto;
 
   @include vp-1199 {
     align-self: center;
@@ -56,9 +57,11 @@
 
   @include vp-767 {
     align-self: flex-start;
-    letter-spacing: 0.14rem;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 0.03rem;
 
-    font-size: 15px;
+    font-size: 20px;
   }
 
   &:hover,
