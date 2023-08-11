@@ -2,6 +2,7 @@
   position: relative;
 
   width: 100%;
+  height: fit-content;
   max-width: 1366px;
   margin: 0 auto;
   padding: 126px 103px 120px;
@@ -12,7 +13,7 @@
   }
 
   @include vp-767 {
-    padding: 55px 15px 69px;
+    padding: 0 15px 69px;
   }
 }
 
@@ -28,14 +29,15 @@
   letter-spacing: 0.1rem;
 
   @include vp-1199 {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
     font-size: 42px;
     line-height: 40px;
+    margin-top: 5px;
   }
 
   @include vp-767 {
     margin-bottom: 45px;
-    margin-top: 5px;
+    margin-top: 0;
     font-size: 32px;
   }
 }
@@ -139,7 +141,7 @@
 
 .reviews__swiper-button {
   position: absolute;
-  top: 339px;
+  top: 50%;
   z-index: 10;
 
   display: flex;
@@ -194,7 +196,7 @@
   }
 
   @include vp-1199 {
-    top: 295px;
+    top: 58%;
 
     &--prev {
       left: calc((100% - 560px) / 2 - 78px);
@@ -206,7 +208,7 @@
   }
 
   @include vp-767 {
-    top: 60%;
+    top: 50%;
     width: 20px;
     height: 20px;
 
@@ -214,11 +216,17 @@
     transform: translate(0, -48%);
 
     &--prev {
-      left: 3%;
+      left: 4%;
     }
 
     &--next {
-      right: 3%;
+      right: 4%;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      top: 50%;
     }
   }
 }
