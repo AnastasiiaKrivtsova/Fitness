@@ -50,9 +50,9 @@
 
   @include vp-1199 {
     align-self: center;
-    padding: 0;
+    padding-left: 12px;
 
-    font-size: 18px;
+    font-size: 24px;
   }
 
   @include vp-767 {

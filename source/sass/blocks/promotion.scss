@@ -22,7 +22,7 @@
   letter-spacing: 0.1rem;
 
   @include vp-1199 {
-    margin-bottom: 44px;
+    margin-bottom: 38px;
     font-size: 42px;
     margin-top: -10px;
   }
@@ -37,13 +37,11 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 211px 211px;
   width: 1160px;
   gap: 40px;
 
   @include vp-1199 {
     grid-template-columns: 324px 324px;
-    grid-template-rows: auto 211px;
     width: 678px;
     gap: 30px;
   }
@@ -111,6 +109,7 @@
 
   @include vp-767 {
     margin-bottom: 7px;
+    margin-top: -4px;
   }
 }
 
@@ -190,12 +189,11 @@
 
 .promotion__card {
   display: flex;
-  justify-content: space-between;
+  flex-shrink: 1;
   flex-direction: column;
   align-items: flex-start;
   min-height: 211px;
   padding: 25px 29px 30px;
-
   color: $color-resolution-blue;
 
   border: 7px solid;
@@ -225,21 +223,20 @@
 
 .promotion__card p {
   margin: 0;
-
+  flex-shrink: 1;
   font-size: 16px;
   line-height: 140%;
-  overflow-y: scroll;
 
   @include vp-767 {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
   }
 }
 
 .promotion__card-details {
   position: relative;
 
-  min-height: auto;
   margin-top: auto;
+  min-height: auto;
   padding: 0;
 
   font-weight: 700;
