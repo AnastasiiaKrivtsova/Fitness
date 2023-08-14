@@ -1142,7 +1142,6 @@ button,
         -ms-grid-row-align: center;
         align-self: center;
     padding-left: 12px;
-    padding: 0;
     font-size: 24px;
   }
 }
@@ -1993,7 +1992,7 @@ button,
   .subscription__control:hover:not(.focus-visible)::after {
     content: "";
     position: absolute;
-    bottom: -13px;
+    bottom: -11px;
     left: 7px;
     width: calc(100% - 12px);
     height: 2px;
@@ -2013,7 +2012,7 @@ button,
 .subscription__control.focus-visible:focus::after {
   content: "";
   position: absolute;
-  bottom: -13px;
+  bottom: -11px;
   left: 7px;
   width: calc(100% - 12px);
   height: 2px;
@@ -2914,7 +2913,7 @@ button,
     left: 1.2%;
   }
   .coaches__swiper-button--next {
-    right: calc((100% - 1000px) / 2 - 11.21%);
+    right: calc((100% - 910px) / 2 - 11.21%);
   }
   .coaches__swiper-button--next:hover, .coaches__swiper-button--next:focus {
     right: 1.2%;
@@ -2922,19 +2921,27 @@ button,
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   .coaches__swiper-button--prev {
-    left: calc((100% - 480px) / 2 - 11.21%);
+    left: calc((100% - 480px) / 2 - 100px);
   }
   .coaches__swiper-button--prev:hover, .coaches__swiper-button--prev:focus {
-    left: calc((100% - 500px) / 2 - 11.21%);
+    left: calc((100% - 500px) / 2 - 100px);
   }
   .coaches__swiper-button--next {
-    right: calc((100% - 480px) / 2 - 11.21%);
+    right: calc((100% - 480px) / 2 - 100px);
   }
   .coaches__swiper-button--next:hover, .coaches__swiper-button--next:focus {
-    right: calc((100% - 500px) / 2 - 11.21%);
+    right: calc((100% - 500px) / 2 - 100px);
   }
 }
-@media (min-width: 321px) and (max-width: 767px) {
+@media (min-width: 321px) and (max-width: 599px) {
+  .coaches__swiper-button--prev {
+    left: calc((100% - 200px) / 2 - 55px);
+  }
+  .coaches__swiper-button--next {
+    right: calc((100% - 200px) / 2 - 55px);
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) {
   .coaches__swiper-button--prev {
     left: calc((100% - 200px) / 2 - 11.21%);
   }
@@ -3650,6 +3657,14 @@ button,
     gap: 6px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .faq__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 425px;
+  }
+}
 
 .faq__control {
   width: 260px;
@@ -3878,7 +3893,7 @@ button,
 
 .reviews__swiper-button {
   position: absolute;
-  top: 50%;
+  top: 343px;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3932,7 +3947,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-button {
-    top: 58%;
+    top: 302px;
   }
   .reviews__swiper-button--prev {
     left: calc((100% - 560px) / 2 - 78px);

@@ -141,7 +141,7 @@
 
 .reviews__swiper-button {
   position: absolute;
-  top: 50%;
+  top: 343px;
   z-index: 10;
 
   display: flex;
@@ -196,7 +196,7 @@
   }
 
   @include vp-1199 {
-    top: 58%;
+    top: 302px;
 
     &--prev {
       left: calc((100% - 560px) / 2 - 78px);
