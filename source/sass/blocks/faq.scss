@@ -70,6 +70,11 @@
 
     gap: 6px;
   }
+
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    display: flex;
+    max-width: 425px;
+  }
 }
 
 .faq__control {
