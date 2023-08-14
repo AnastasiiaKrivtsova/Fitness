@@ -333,7 +333,7 @@
     }
 
     &--next {
-      right: calc((100% - 1000px) / 2 - 11.21%);
+      right: calc((100% - 910px) / 2 - 11.21%);
 
       &:hover,
       &:focus {
@@ -344,25 +344,35 @@
 
   @media (min-width: 769px) and (max-width: 1199px) {
     &--prev {
-      left: calc((100% - 480px) / 2 - 11.21%);
+      left: calc((100% - 480px) / 2 - 100px);
 
       &:hover,
       &:focus {
-        left: calc((100% - 500px) / 2 - 11.21%);
+        left: calc((100% - 500px) / 2 - 100px);
       }
     }
 
     &--next {
-      right: calc((100% - 480px) / 2 - 11.21%);
+      right: calc((100% - 480px) / 2 - 100px);
 
       &:hover,
       &:focus {
-        right: calc((100% - 500px) / 2 - 11.21%);
+        right: calc((100% - 500px) / 2 - 100px);
       }
     }
   }
 
-  @media (min-width: 321px) and (max-width: 767px) {
+  @media (min-width: 321px) and (max-width: 599px) {
+    &--prev {
+      left: calc((100% - 200px) / 2 - 55px);
+    }
+
+    &--next {
+      right: calc((100% - 200px) / 2 - 55px);
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 767px) {
     &--prev {
       left: calc((100% - 200px) / 2 - 11.21%);
 
