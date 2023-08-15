@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 60px 60px 60px 98px;
+  padding: 60px 60px 55px 98px;
   color: $color-sapphire;
 
   @include vp-1199 {
@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 60px 15px 61px;
+    padding: 60px 15px 65px;
   }
 }
 
@@ -38,6 +38,7 @@
   letter-spacing: 0.07rem;
 
   @include vp-1199 {
+    margin-top: 5px;
     margin-bottom: 36px;
     font-size: 42px;
     line-height: 40px;
@@ -45,6 +46,7 @@
   }
 
   @include vp-767 {
+    margin-top: 2px;
     margin-bottom: 35px;
     font-size: 32px;
   }
@@ -110,6 +112,7 @@
 
     &--phone {
       order: 3;
+      margin-top: 2px;
     }
 
     &--time {
