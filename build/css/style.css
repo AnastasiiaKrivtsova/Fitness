@@ -1890,7 +1890,7 @@ button,
 }
 
 .subscription__wrapper h2 {
-  margin: 0 0 22px;
+  margin: 0 0 28px;
   font-weight: 600;
   font-size: 54px;
   line-height: 47px;
@@ -2838,7 +2838,7 @@ button,
 
 .coaches__swiper-button {
   position: absolute;
-  top: 52%;
+  top: 51%;
   z-index: 2;
   width: 56px;
   height: 56px;
@@ -3755,7 +3755,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__wrapper {
-    padding: 0 15px 69px;
+    padding: 55px 15px 69px;
   }
 }
 
@@ -3780,7 +3780,7 @@ button,
 @media (max-width: 767px) {
   .reviews h2 {
     margin-bottom: 40px;
-    margin-top: -7px;
+    margin-top: 0;
     font-size: 32px;
   }
 }
