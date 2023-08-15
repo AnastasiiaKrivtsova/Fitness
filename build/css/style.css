@@ -1648,7 +1648,7 @@ button,
   font-weight: 600;
   font-size: 48px;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.09rem;
 }
 @media (max-width: 1199px) {
   .gym__inner h2 {
@@ -2224,7 +2224,7 @@ button,
   height: auto;
   margin-bottom: -56px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 100px;
   color: #e8e8e8;
   -webkit-transform: translate(-50%);
@@ -2234,6 +2234,7 @@ button,
 @media (max-width: 767px) {
   .subscription__price-inner span {
     margin-bottom: -45px;
+    font-size: 80px;
   }
 }
 
@@ -3754,7 +3755,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__wrapper {
-    padding: 55px 15px 69px;
+    padding: 0 15px 69px;
   }
 }
 
@@ -3773,13 +3774,13 @@ button,
     margin-bottom: 46px;
     font-size: 42px;
     line-height: 40px;
-    margin-top: 5px;
+    margin-top: 9px;
   }
 }
 @media (max-width: 767px) {
   .reviews h2 {
     margin-bottom: 40px;
-    margin-top: 0;
+    margin-top: -7px;
     font-size: 32px;
   }
 }
@@ -4265,7 +4266,7 @@ button,
     margin-bottom: 36px;
     font-size: 42px;
     line-height: 40px;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.09rem;
   }
 }
 @media (max-width: 767px) {
@@ -4273,6 +4274,7 @@ button,
     margin-top: 2px;
     margin-bottom: 35px;
     font-size: 32px;
+    letter-spacing: 0.05rem;
   }
 }
 
