@@ -26,7 +26,7 @@
   }
 
   @include vp-767 {
-    padding: 20px 30px 15px 0;
+    padding: 20px 30px 20px 0;
 
     font-size: 18px;
     line-height: 21px;
@@ -100,6 +100,10 @@
 
     width: 32px;
     height: 32px;
+
+    &--tab-one {
+      top: 35px;
+    }
 
     &--tab-eleven,
     &--tab-twelve {
