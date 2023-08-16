@@ -64,7 +64,7 @@
 
   @media (min-width: $vp-320) and (max-width: 767px) {
     max-width: 100%;
-    width: 40%;
+    width: 60%;
     object-fit: cover;
   }
 
@@ -142,6 +142,11 @@
   @include vp-767 {
     width: 226px;
   }
+
+  @media (max-width: $vp-768) and (max-width: 1199px) {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .coaches__slide:hover > p {
@@ -172,6 +177,11 @@
   @include vp-767 {
     width: 226px;
     padding: 46px 20px 28px;
+  }
+
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -216,6 +226,15 @@
   }
 
   row-gap: 12px;
+}
+
+.coaches__info-list {
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .coaches__info-item {
@@ -362,7 +381,7 @@
     }
   }
 
-  @media (min-width: 321px) and (max-width: 599px) {
+  @media (min-width: 321px) and (max-width: 454px) {
     &--prev {
       left: calc((100% - 200px) / 2 - 55px);
     }
@@ -372,22 +391,42 @@
     }
   }
 
+  @media (min-width: 455px) and (max-width: 527px) {
+    &--prev {
+      left: calc((100% - 250px) / 2 - 55px);
+    }
+
+    &--next {
+      right: calc((100% - 250px) / 2 - 55px);
+    }
+  }
+
+  @media (min-width: 528px) and (max-width: 599px) {
+    &--prev {
+      left: calc((100% - 300px) / 2 - 55px);
+    }
+
+    &--next {
+      right: calc((100% - 300px) / 2 - 55px);
+    }
+  }
+
   @media (min-width: 600px) and (max-width: 767px) {
     &--prev {
-      left: calc((100% - 200px) / 2 - 11.21%);
+      left: calc((100% - 350px) / 2 - 11.21%);
 
       &:hover,
       &:focus {
-        left: calc((100% - 200px) / 2 - 11.21%);
+        left: calc((100% - 350px) / 2 - 11.21%);
       }
     }
 
     &--next {
-      right: calc((100% - 200px) / 2 - 11.21%);
+      right: calc((100% - 350px) / 2 - 11.21%);
 
       &:hover,
       &:focus {
-        right: calc((100% - 200px) / 2 - 11.21%);
+        right: calc((100% - 350px) / 2 - 11.21%);
       }
     }
   }

@@ -1,8 +1,10 @@
 .reviews__wrapper {
   position: relative;
+  align-items: center;
+  justify-content: center;
 
   width: 100%;
-  height: fit-content;
+  height: 100%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 126px 103px 120px;
@@ -45,9 +47,9 @@
 .reviews__swiper {
   max-width: 560px;
   object-fit: cover;
-  height: 100%;
   background-size: cover;
   width: 100%;
+  height: 100%;
 
   @include vp-1199 {
     max-width: 556px;
@@ -62,6 +64,7 @@
 .reviews__slide-wrapper {
   align-items: center;
   position: relative;
+  height: 100%;
 
   padding: 54px 54px 57px;
   padding-left: 170px;
@@ -141,10 +144,10 @@
 
 .reviews__swiper-button {
   position: absolute;
-  top: 343px;
+  top: 57%;
+  transform: translateY(-50%);
   z-index: 10;
 
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 56px;
@@ -159,9 +162,9 @@
 
   &--prev {
     left: calc((100% - 560px) / 2 - 76px);
+    transform: translate(0, -50%);
 
     background-image: url("../img/svg/swiper.svg");
-    transform: translate(0, -50%);
 
     &:hover,
     &:focus-visible {
@@ -178,9 +181,9 @@
 
   &--next {
     right: calc((100% - 560px) / 2 - 76px);
+    transform: translate(0, -50%);
 
     background-image: url("../img/svg/swiper-right.svg");
-    transform: translate(0, -50%);
 
     &:hover,
     &:focus-visible {
@@ -196,7 +199,7 @@
   }
 
   @include vp-1199 {
-    top: 302px;
+    top: 56%;
 
     &--prev {
       left: calc((100% - 560px) / 2 - 78px);
@@ -208,7 +211,7 @@
   }
 
   @include vp-767 {
-    top: 56.3%;
+    top: 57%;
     width: 20px;
     height: 20px;
 
@@ -226,7 +229,7 @@
     &:hover,
     &:focus-visible,
     &:active {
-      top: 50%;
+      top: 57%;
     }
   }
 }
