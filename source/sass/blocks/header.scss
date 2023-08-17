@@ -46,7 +46,7 @@
   color: $color-default-white;
   letter-spacing: 0.05rem;
   grid-column: 2/3;
-  overflow-y: auto;
+  overflow: hidden;
 
   @include vp-1199 {
     align-self: center;

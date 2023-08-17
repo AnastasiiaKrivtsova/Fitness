@@ -96,19 +96,25 @@
   }
 
   @include vp-767 {
-    top: 47px;
+    top: 48px;
 
     width: 32px;
     height: 32px;
 
-    &--tab-one {
+    &--tab-one,
+    &--tab-seven {
       top: 35px;
     }
+
 
     &--tab-eleven,
     &--tab-twelve {
       top: 42px;
     }
+  }
+
+  @media (min-width: 321px) and (max-width: 767px) {
+    top: 35px;
   }
 
   &:disabled {
@@ -128,6 +134,7 @@
   }
 
   @include vp-767 {
+    top: 47px;
     width: 32px;
     height: 32px;
 
