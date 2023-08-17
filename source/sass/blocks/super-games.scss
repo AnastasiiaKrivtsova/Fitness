@@ -37,6 +37,14 @@
     width: 290px;
     padding-bottom: 50px;
   }
+
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .super-games__inner h2 {
@@ -269,10 +277,22 @@
 
 .super-games picture {
   background-color: $color-midnight-express;
+
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
 
 .super-games img {
   height: 100%;
 
   object-fit: fill;
+
+  @media (min-width: $vp-320) and (max-width: 767px) {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
 }

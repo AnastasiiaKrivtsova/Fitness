@@ -2394,6 +2394,20 @@ button,
     padding-bottom: 50px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .super-games__inner {
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .super-games__inner h2 {
   margin: 0;
@@ -2622,11 +2636,27 @@ button,
 .super-games picture {
   background-color: #000145;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .super-games picture {
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .super-games img {
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .super-games img {
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .coaches {
